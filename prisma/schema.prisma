@@ -1,0 +1,104 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Prayer {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  request   String
+  createdAt DateTime @default(now())
+}
+
+model Testimony {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model Subscriber {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String?
+  email     String   @unique
+  password  String
+  role      String     @default("USER")
+  createdAt DateTime @default(now())
+}
+
+model Event {
+  id        String   @id @default(uuid())
+  title     String
+  date      DateTime
+  location  String
+  image     String?
+  createdAt DateTime @default(now())
+}
+
+model Sermon {
+  id          String   @id @default(cuid())
+  title       String
+  preacher    String
+  slug        String   @unique
+  description String?
+  mediaUrl    String
+  mediaType   String
+  series      String?
+  published   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model KMPost {
+  id        String   @id @default(uuid())
+  title     String
+  content   String
+  image     String?
+  createdAt DateTime @default(now())
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  auditLogs AuditLog[]
+}
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+}
+
+model AuditLog {
+  id            String   @id @default(cuid())
+  action        String
+  entity        String
+  entityId      String?
+  performedById String
+  performedBy   Admin    @relation(fields: [performedById], references: [id])
+  createdAt     DateTime @default(now())
+}
