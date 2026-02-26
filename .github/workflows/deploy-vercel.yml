@@ -33,13 +33,8 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to Vercel
-        run: |
-          npx vercel --prod --confirm \
-            --scope team_CTFXNerDQMd8jwzJdvKfeMUw \
-            --project prj_DdRLFaIi3AlXiY8SU4O3OwZQaCw3
         env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Comment PR with deployment URL
         if: github.event_name == 'pull_request'
