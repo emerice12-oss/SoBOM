@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BackgroundWrapper from "../components/BackgroundWrapper";
 import Header from "../components/Header";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: {
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
