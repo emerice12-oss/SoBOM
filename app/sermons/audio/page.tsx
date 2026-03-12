@@ -8,7 +8,7 @@ export default async function AudioPage() {
 
   return (
     <div className="container py-12">
-      <h1 className="text-3xl text-deep-blue font-bold mb-6">Audio Messages</h1>
+      <h1 className="text-3xl text-deep-green font-bold mb-6">Audio Messages</h1>
 
       {sermons.map((sermon) => (
         <div key={sermon.id} className="mb-6">

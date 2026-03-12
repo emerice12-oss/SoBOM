@@ -7,7 +7,7 @@ export default async function ArchivePage() {
 
   return (
     <div className="container py-12">
-      <h1 className="text-3xl text-deep-blue font-bold mb-6">Sermon Archive</h1>
+      <h1 className="text-3xl text-deep-green font-bold mb-6">Sermon Archive</h1>
 
       <ul className="space-y-3">
         {sermons.map((sermon) => (

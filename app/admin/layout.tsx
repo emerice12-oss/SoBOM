@@ -22,7 +22,7 @@ export default function AdminLayout({
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar */}
-      <aside className="w-64 bg-deep-blue text-white p-6 flex flex-col justify-between">
+      <aside className="w-64 bg-deep-green text-white p-6 flex flex-col justify-between">
         <div>
           <h2 className="text-xl font-bold mb-8">Admin Panel</h2>
 

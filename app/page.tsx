@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* GRID SECTION */}
       <section className="container py-20 max-w-7xl mx-auto px-6">
-        <h2 className="text-deep-blue text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-deep-green text-3xl md:text-4xl font-bold text-center mb-12">
           Explore SoBOM
         </h2>
 
@@ -50,18 +50,18 @@ export default function Home() {
 
       <section className="mt-16">
         <div className="bg-white/30 backdrop-blur-md rounded-xl p-6 shadow-lg shadow-black/70 max-w-6xl py-16 px-6 mx-auto">
-          <h2 className="text-3xl font-bold text-deep-blue mb-8 text-center">
+          <h2 className="text-3xl font-bold text-deep-green mb-8 text-center">
             Latest Announcements
           </h2>
 
           <div className="space-y-6 ">
             {announcements.map((item, index) => (
-              <div key={index} className="border-l-4 border-gold pl-4">
-                <h3 className="text-xl text-deep-blue font-semibold">
+              <div key={index} className="border-l-5 border-deep-green pl-4">
+                <h3 className="text-xl text-deep-green font-semibold">
                   {item.title}
                 </h3>
-                <p className="text-sm text-blue italic">{item.date}</p>
-                <p className="mt-2 text-blue">{item.description}</p>
+                <p className="text-sm text-green italic">{item.date}</p>
+                <p className="mt-2 text-green">{item.description}</p>
               </div>
             ))}
           </div>

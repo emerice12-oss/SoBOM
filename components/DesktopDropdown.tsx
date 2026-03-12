@@ -36,7 +36,7 @@ export function DesktopDropdown({
     >
       <button
         className={`inline-flex items-center font-medium transition ${
-          isActive ? "text-gold" : "text-deep-blue hover:text-gold"
+          isActive ? "text-deep-green" : "text-deep-green hover:text-green"
         }`}
       >
         {label}
@@ -65,7 +65,7 @@ export function DesktopDropdown({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="absolute left-0 top-full mt-3 w-52 bg-white text-deep-blue shadow-xl rounded-xl overflow-hidden z-50"
+            className="absolute left-0 top-full mt-3 w-52 bg-white text-deep-green shadow-xl rounded-xl overflow-hidden z-50"
           >
             {items.map((item) => {
               const childActive = pathname === item.href;
@@ -76,8 +76,8 @@ export function DesktopDropdown({
                   href={item.href}
                   className={`block px-5 py-3 transition ${
                     childActive
-                      ? "bg-gold text-white font-semibold"
-                      : "hover:bg-deep-blue hover:text-white"
+                      ? "bg-green text-white font-semibold"
+                      : "hover:bg-deep-green hover:text-white"
                   }`}
                 >
                   {item.label}

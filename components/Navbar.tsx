@@ -19,20 +19,20 @@ export default function Navbar() {
         className="sticky top-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* LOGO */}
-          <Link href="/" className="flex items-center gap-2 rounded hover:text-white transition">
+          <Link href="/" className="flex items-center gap-2 rounded transition">
             <Image
               src="/images/sb/logo.jpg"
               alt="SoBOM Logo"
               width={40}
               height={40}
             />
-            <span className="font-bold text-lg hidden sm:block">
+            <span className="font-bold text-lg text-deep-green hidden sm:block hover:text-green">
               SoBOM
             </span>
           </Link>
 
           {/* DESKTOP MENU */}
-          <nav className="text-deep-blue hover:text-white hidden md:flex items-center space-x-8">
+          <nav className="text-deep-green hidden md:flex items-center space-x-8">
             {navigation.map((menu) => (
               <DesktopDropdown
                 key={menu.label}
@@ -44,7 +44,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="text-deep-blue hover:text-white font-medium transition"
+              className="text-deep-green font-medium hover:text-green transition"
             >
               Contact
             </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
           >
             <motion.span
               animate={{ rotate: open ? 90 : 0 }}
-              className="text-3xl hover:text-white"
+              className="text-3xl text-deep-green hover:text-green"
             >
               ☰
             </motion.span>
@@ -73,9 +73,9 @@ export default function Navbar() {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden bg-gold border-t border-deep-blue px-6 py-4 overflow-hidden"
+              className="md:hidden bg-green border-t border-deep-green px-6 py-4 overflow-hidden"
             >
-              <nav className="space-y-4">
+              <nav className="space-y-4 text-white">
                 {navigation.map((menu) => (
                   <MobileDropdown
                     key={menu.label}

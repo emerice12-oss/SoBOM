@@ -54,31 +54,31 @@ export default function Footer() {
     <footer className="mt-15">
 
       {/* ================= TOP SECTION ================= */}
-      <div className="px-1 py-1  bg-blue border-t-20 border-gold">
+      <div className="px-1 py-1  bg-green border-t-20 border-gold">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-5">
 
         <div className="p-6">
           <p className="text-white">
-            Showers of Blessing Outreach Ministry - Meeting area: <strong className="italic">
+            Showers of Blessing Outreach Ministry - Meeting area: <strong className="italic text-gold">
             Akyem Asuom, DGM Temple.</strong>
           </p>
           <p className="mt-4 text-white">
-            Showers of Blessing Outreach Ministry - Virtual Meeting Links: <strong className="italic">
+            Showers of Blessing Outreach Ministry - Virtual Meeting Links: <strong className="italic text-gold">
             https://call.whatsapp.com/voice/acToUVEzf5re0rfjJ2I5DV;
             https://meet.google.com/eoo-mieh-mkj;
             https//wacren.zoom.us/j/63502774590?pwd=PdQMQrukLi-T18Hecpxrah9d5Ylr9RB.1</strong>
           </p>
           <p className="mt-4 text-white">
-            Showers of Blessing Outreach Ministry - Contact Email and General Informations: <strong className="italic">sobom.kingdom@gmail.com</strong>
+            Showers of Blessing Outreach Ministry - Contact Email and General Informations: <strong className="italic text-gold">sobom.kingdom@gmail.com</strong>
             </p>
           <p className="mt-4 text-white">
-            Phone: <strong className="italic">+233 59 887 0883</strong>
+            Phone: <strong className="italic text-gold">+233 59 887 0883</strong>
           </p>
         </div>
 
         {/* Write to Us */}
         <div className="p-6">
-          <h3 className="text-gold font-bold mb-2">Write To Us</h3>
+          <h3 className="text-gold font-bold mb-2">WRITE TO US</h3>
           <form onSubmit={handleMessageSubmit} className="space-y-2">
             <input
               type="text"
@@ -106,7 +106,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-gold text-deep-blue px-4 py-2 rounded hover:text-white shadow-lg shadow-black/30 transition"
+              className="bg-gold text-deep-green px-4 py-2 rounded hover:text-white shadow-lg shadow-black/30 transition"
             >
               Submit
             </button>
@@ -122,7 +122,7 @@ export default function Footer() {
         <div>
         <div className="p-6 transition-all duration-300">
           <h3 className="text-gold font-bold text-lg mb-3">
-            Follow Us On Our Handles
+            FOLLOW US ON OUR HANDLES
           </h3>
           <div className="flex space-x-4 mt-4">
             <a
@@ -156,7 +156,7 @@ export default function Footer() {
 
         {/* Newsletter */}
         <div className="mt-6 md:mt-10">
-          <h3 className="text-gold font-bold mb-2">Sign Up To Receive Our Newsletters</h3>
+          <h3 className="text-gold font-bold mb-2">SIGN UP TO RECEIVE OUR NEWSLETTERS</h3>
           <form onSubmit={handleNewsletterSubmit} className="flex flex-col space-y-2">
             <input
               type="email"
@@ -168,7 +168,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-gold text-deep-blue px-4 py-2 rounded hover:text-white shadow-lg shadow-black/30 transition"
+              className="bg-gold text-deep-green px-4 py-2 rounded hover:text-white shadow-lg shadow-black/30 transition"
             >
               Subscribe
             </button>
@@ -183,7 +183,7 @@ export default function Footer() {
       </div>
 
       {/* ================= BOTTOM SECTION ================= */}
-      <div className="bg-deep-blue border-t border-gold">
+      <div className="bg-deep-green border-t border-gold">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
 
           {/* Logo Left */}

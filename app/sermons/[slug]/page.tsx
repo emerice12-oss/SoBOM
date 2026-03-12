@@ -15,7 +15,7 @@ export default async function SermonDetail({
   if (!sermon) return notFound();
 
   return (
-    <div className="container py-12 space-y-6 text-deep-blue">
+    <div className="container py-12 space-y-6 text-deep-green">
       <h1 className="text-3xl font-bold">{sermon.title}</h1>
 
       {sermon.mediaType === "VIDEO" ? (

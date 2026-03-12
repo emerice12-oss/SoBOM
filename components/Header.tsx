@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaPlay } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <header className="bg-deep-blue text-white hidden md:block bg-deep">
+    <header className="bg-deep-green text-white hidden md:block bg-deep">
       <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
 
         {/* LEFT SIDE — SOCIAL ICONS */}

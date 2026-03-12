@@ -8,7 +8,7 @@ export const metadata = {
 export default function TestimoniesPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold text-deep-blue mb-12">
+      <h1 className="text-4xl font-bold text-deep-green mb-12">
         Testimonies
       </h1>
 
@@ -16,10 +16,10 @@ export default function TestimoniesPage() {
         {testimonies.map((item, index) => (
           <div
             key={index}
-            className="bg-white/30 backdrop-blur-md rounded-xl p-6 border-l-4 border-gold shadow-lg shadow-black/70"
+            className="bg-white/30 backdrop-blur-md rounded-xl p-6 border-l-5 border-deep-green shadow-lg shadow-black/70"
           >
-            <p className="text-lg text-blue italic">"{item.message}"</p>
-            <p className="mt-4 font-semibold text-deep-blue">
+            <p className="text-lg text-green italic">"{item.message}"</p>
+            <p className="mt-4 font-semibold text-deep-green">
               — {item.name}
             </p>
           </div>

@@ -29,8 +29,8 @@ export default function TestimonyForm() {
 }
 
   return (
-    <div className="mt-16 bg-white/30 backdrop-blur-md rounded-xl p-6 shadow-lg shadow-black/70 text-deep-blue">
-      <h2 className="text-2xl font-bold text-deep-blue mb-6">
+    <div className="mt-16 bg-white/30 backdrop-blur-md rounded-xl p-6 shadow-lg shadow-black/70 text-deep-green">
+      <h2 className="text-2xl font-bold text-deep-green mb-6">
         Share Your Testimony
       </h2>
 
@@ -44,7 +44,7 @@ export default function TestimonyForm() {
           onChange={(e) =>
             setForm({ ...form, name: e.target.value })
           }
-          className="w-full p-3 border border-blue rounded text-black bg-white"
+          className="w-full p-3 border border-green rounded text-black bg-white"
           required
         />
 
@@ -57,7 +57,7 @@ export default function TestimonyForm() {
           onChange={(e) =>
             setForm({ ...form, email: e.target.value })
           }
-          className="w-full p-3 border border-blue rounded text-black bg-white"
+          className="w-full p-3 border border-green rounded text-black bg-white"
           required
         />
 
@@ -75,14 +75,14 @@ export default function TestimonyForm() {
           onChange={(e) =>
             setForm({ ...form, message: e.target.value })
           }
-          className="w-full p-3 border border-blue rounded text-black bg-white"
+          className="w-full p-3 border border-green rounded text-black bg-white"
           rows={4}
           required
         />
 
         <button
           type="submit"
-          className="bg-deep-blue text-white px-6 py-3 rounded font-semibold hover:bg-gold hover:text-deep-blue shadow-lg shadow-black/70 transition"
+          className="bg-deep-green text-white px-6 py-3 rounded font-semibold hover:bg-gold hover:text-deep-green shadow-lg shadow-black/70 transition"
         >
           Submit
         </button>

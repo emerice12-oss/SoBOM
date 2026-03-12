@@ -50,7 +50,7 @@ export function MobileDropdown({
                     closeMenu();
                     setOpen(false);
                   }}
-                  className="block text-base text-gray-700 hover:bg-deep-blue hover:text-white transition"
+                  className="block text-base text-gray-700 hover:bg-deep-green hover:text-white transition"
                 >
                   {item.label}
                 </Link>

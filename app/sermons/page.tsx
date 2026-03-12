@@ -26,12 +26,12 @@ export default async function SermonsPage({
 
   return (
     <div className="container py-12 space-y-6">
-      <h1 className="text-3xl text-deep-blue font-bold">Sermons</h1>
+      <h1 className="text-3xl text-deep-green font-bold">Sermons</h1>
 
       <div className="flex gap-4">
-        <a href="/sermons" className="underline shadow-lg shadow-black/70 bg-white hover:text-white hover:bg-deep-blue">All</a>
-        <a href="/sermons?type=AUDIO" className="underline shadow-lg shadow-black/70 bg-white hover:text-white hover:bg-deep-blue">Audio</a>
-        <a href="/sermons?type=VIDEO" className="underline shadow-lg shadow-black/70 bg-white hover:text-white hover:bg-deep-blue">Video</a>
+        <a href="/sermons" className="underline shadow-lg shadow-black/70 bg-white hover:text-white hover:bg-deep-green">All</a>
+        <a href="/sermons?type=AUDIO" className="underline shadow-lg shadow-black/70 bg-white hover:text-white hover:bg-deep-green">Audio</a>
+        <a href="/sermons?type=VIDEO" className="underline shadow-lg shadow-black/70 bg-white hover:text-white hover:bg-deep-green">Video</a>
       </div>
 
       <div className="grid md:grid-cols-3 gap-6">

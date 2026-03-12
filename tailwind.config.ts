@@ -8,13 +8,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#0B1C2D", // Deep blue
+        primary: "#0d1651", // Deep blue
         gold: "#FBBF24",
         light: "#FFFFFF",
-        gray: "#f5f5f5bc",
-        darkGray: "#333333",
         black: "#000000",
-        blue: "#184169",
+        gray: "#DADADABC",
+        darkGray: "#333333",
+        dark: "#212121",
+        green: "#2739ae",
+        deepGreen: "#05431c",
+        blue: "#0AA543",
+        red: "#E3342F",
       },
     },
   },

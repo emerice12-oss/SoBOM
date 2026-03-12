@@ -13,8 +13,8 @@
   --dark: #212121;
   --blue: #2739ae;
   --gold: #FBBF24;
-  --dark-green: #05431c;
-  --green: #0aa543;
+  --deep-green: #053b19;
+  --green: #068936;
   --red: #e3342f;
 
   --shadow-dark: #212121;
@@ -49,24 +49,24 @@ button {
 /* ================================
    CUSTOM UTILITIES
 ================================ */
-.text-deep-blue {
-  color: var(--deep-blue);
+.text-deep-green {
+  color: var(--deep-green);
 }
 
 .text-white {
   color: var(--white);
 }
 
-.text-blue {
-  color: var(--blue);
-}
-
-.text-dark-green {
-  color: var(--dark-green);
-}
-
 .text-green {
   color: var(--green);
+}
+
+.text-deep-blue {
+  color: var(--deep-blue);
+}
+
+.text-blue {
+  color: var(--blue);
 }
 
 .text-red {
@@ -77,12 +77,12 @@ button {
   color: var(--gold);
 }
 
-.bg-deep-blue {
-  background-color: var(--deep-blue);
+.bg-deep-green {
+  background-color: var(--deep-green);
 }
 
-.bg-blue {
-  background-color: var(--blue);
+.bg-green {
+  background-color: var(--green);
 }
 
 .bg-gold {
@@ -97,20 +97,24 @@ button {
   border-color: var(--gold);
 }
 
-.border-blue {
-  border-color: var(--blue);
+.border-green {
+  border-color: var(--green);
 }
 
 .hover\:bg-gold:hover {
   background-color: var(--gold);
 }
 
-.hover\:text-deep-blue:hover {
-  color: var(--deep-blue);
+.hover\:text-deep-green:hover {
+  color: var(--deep-green);
 }
 
-.hover\:bg-deep-blue:hover {
-  background-color: var(--deep-blue);
+.hover\:bg-deep-green:hover {
+  background-color: var(--deep-green);
+}
+
+.hover\:text-green:hover {
+  color: var(--green);
 }
 
 .hover\:text-white:hover {
@@ -148,7 +152,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-blue);
+  background: var(--color-green);
   border-radius: 5px;
 }
 

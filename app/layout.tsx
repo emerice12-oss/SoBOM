@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen text-deep-blue">
+      <body className="relative min-h-screen text-deep-green">
 
         <Header />
 
