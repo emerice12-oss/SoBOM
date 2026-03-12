@@ -3,10 +3,10 @@ name: Deploy to Vercel
 on:
   push:
     branches:
-      - deploy/vercel
+      - main
   pull_request:
     branches:
-      - deploy/vercel
+      - main
 
 jobs:
   deploy:
@@ -39,7 +39,7 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
+          vercel-args: '--prod --confirm'
 
       - name: Comment PR with deployment URL
         if: github.event_name == 'pull_request'
