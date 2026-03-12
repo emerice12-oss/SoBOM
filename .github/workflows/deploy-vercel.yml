@@ -37,7 +37,7 @@ jobs:
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-args: '--prod'
+          vercel-args: '--prod --confirm'
 
       - name: Comment PR with deployment URL
         if: github.event_name == 'pull_request'
