@@ -1,6 +1,8 @@
 import { prisma } from "prisma/lib/prisma";
 import { revalidatePath } from "next/cache";
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminSermons() {
   const sermons = await prisma.sermon.findMany({
     where: { published: true },

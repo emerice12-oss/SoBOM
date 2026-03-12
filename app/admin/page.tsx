@@ -1,6 +1,8 @@
 import { prisma } from "prisma/lib/prisma";
 import { requireAdminRole } from "@/lib/auth";
 
+export const dynamic = 'force-dynamic';
+
 export default async function AdminDashboard() {
   await requireAdminRole(["SUPER_ADMIN", "ADMIN", "EDITOR"]);
 

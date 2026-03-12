@@ -2,6 +2,8 @@ import { prisma } from "prisma/lib/prisma";
 
 const PAGE_SIZE = 6;
 
+export const dynamic = 'force-dynamic';
+
 export default async function SermonsPage({
   searchParams,
 }: {

@@ -1,5 +1,7 @@
 import { prisma } from "prisma/lib/prisma";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ArchivePage() {
   const sermons = await prisma.sermon.findMany({
     orderBy: { createdAt: "desc" },

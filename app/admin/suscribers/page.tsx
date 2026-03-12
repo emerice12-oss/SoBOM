@@ -1,4 +1,4 @@
- "use server";
+export const dynamic = 'force-dynamic';
 
 import { revalidatePath } from "next/cache";
 import { prisma } from "prisma/lib/prisma";
@@ -7,6 +7,8 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "prisma/lib/auth";
 
 export async function deleteSubscriber(id: string) {
+  "use server";
+
   await prisma.subscriber.delete({
     where: { id },
   });

@@ -1,5 +1,7 @@
 import { prisma } from "prisma/lib/prisma";
 
+export const dynamic = 'force-dynamic';
+
 export default async function AudioPage() {
   const sermons = await prisma.sermon.findMany({
     where: { mediaType: "AUDIO" },
